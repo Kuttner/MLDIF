@@ -56,7 +56,6 @@ def load_data(path, case):
 from sklearn.preprocessing import MinMaxScaler
     
 def normalize_data(D):
-    #%% Normalize the dataset
     scaler = MinMaxScaler(feature_range=(0,1))
     
     for i in range(0, len(D)):

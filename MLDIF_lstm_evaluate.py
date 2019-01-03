@@ -22,10 +22,12 @@ from keras.models import load_model
 from keras import backend as K
 import random
 import pickle
+import os
 
 
 #%% Load variables
-save_path = '/Users/sku014/Documents/Temp/test'  #Office
+path = os.getcwd()
+save_path = path + '/aif_prediction/'
 
 with open(save_path + 'variables.pkl', 'rb') as f:  # Python 3: open(..., 'rb')
     loss_tr, loss_vl, D, Y, VOIid, time_scale, split_idx = pickle.load(f)
