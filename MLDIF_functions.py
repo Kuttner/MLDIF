@@ -1,6 +1,8 @@
 ######################################################################################################################################################################################################
 # Machine Learning-Derived Input-Function in Dynamic 18F-FDG PET 
 #
+# MLDIF_functions.py
+#
 # This code bundle contains functions required for LSTM model training and evaulation.
 # Please refer to the main script files and the publication by Kuttner et al 2019 for further details.
 # 

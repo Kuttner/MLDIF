@@ -1,6 +1,8 @@
 ######################################################################################################################################################################################################
 # Machine Learning-Derived Input-Function in Dynamic 18F-FDG PET 
 #
+# MLDIF_lstm_tissue_region_importance_train.py
+#
 # This code performs LSTM model training on dynamic FDG PET data for arterial input function (AIF) prediction using all different combinations of input tissue regions (features).
 # The model takes time-activity-curves from an arbitrary number of tissue regions as input, trains a model that predicts the AIF, required for further compartment modeling.
 # A ground truth AIF is required for model training, which can be obtained from blood or image data.
@@ -19,22 +21,18 @@
 ######################################################################################################################################################################################################  
 
 import numpy as np
-import matplotlib.pyplot as plt
-from MLDIF_lstm_functions import lstm_train_fkn
-from MLDIF_lstm_functions import load_data
-from MLDIF_lstm_functions import normalize_data
-from MLDIF_lstm_functions import split
-from keras.models import load_model
+from MLDIF_functions import lstm_train_fkn
+from MLDIF_functions import load_data
+from MLDIF_functions import split
 from keras import backend as K
-import os, datetime
-import random
+import os
 import pickle
 import itertools
 
 #%% Define load and save_path
 path = os.getcwd()
 load_path = path + '/data.mat'
-save_path = path + '/tissue_region_importance/'
+save_path = path + '/LSTM_tissue_region_importance/'
 
 
 #%% Load the data

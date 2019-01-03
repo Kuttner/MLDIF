@@ -1,6 +1,8 @@
 ######################################################################################################################################################################################################
 # Machine Learning-Derived Input-Function in Dynamic 18F-FDG PET 
 #
+# MLDIF_lstm_evaluate.py
+#
 # This code performs model evaluation of previously trained LSTM models from dynamic FDG PET data for arterial input function (AIF) prediction.
 # The script evaluates the trained model on the test data and returns a predicted AIF for each model.
 # The script returns the AIF from best model (lowest validation loss) in the first index, as well as an equal number of AIFs for all samples, randomly choosen from the remaining model predictions.  
@@ -15,9 +17,8 @@
 ######################################################################################################################################################################################################    
 
 import numpy as np
-import matplotlib.pyplot as plt
 import scipy.io as sio
-from lstm_functions import split
+from MLDIF_functions import split
 from keras.models import load_model
 from keras import backend as K
 import random
@@ -27,7 +28,7 @@ import os
 
 #%% Load variables
 path = os.getcwd()
-save_path = path + '/aif_prediction/'
+save_path = path + '/LSTM_AIF_regression/'
 
 with open(save_path + 'variables.pkl', 'rb') as f:  # Python 3: open(..., 'rb')
     loss_tr, loss_vl, D, Y, VOIid, time_scale, split_idx = pickle.load(f)
