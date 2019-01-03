@@ -1,7 +1,7 @@
 ######################################################################################################################################################################################################
 # Machine Learning-Derived Input-Function in Dynamic 18F-FDG PET 
 #
-# MLDIF_lstm_tissue_region_importance_evaluate.py
+# MLDIF_tissue_region_importance_evaluate.py
 #
 # This code performs model evaluation of previously trained LSTM models from dynamic FDG PET data for arterial input function (AIF) prediction, using all different combinations of input tissue regions (features).
 # The script evaluates the trained model on the test data and returns a predicted AIF for each model.
