@@ -11,7 +11,7 @@ The followings files are available:
 - MLDIF_tissue_region_importance_evaluate.py:  Evaluate an LSTM model trained with feature combinations.
 - MLDIF_GP.py: Train and evaluate two different GP models
 
-Please see the comments in the code and the puplication below, for further implementation details.
+Please see the comments in the code, and the puplication below, for further implementation details.
 
 ## Citation
 Please cite any usage of the content of this repository as:
