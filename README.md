@@ -16,4 +16,4 @@ Please see the comments in the code, and the puplication below, for further impl
 ## Citation
 Please cite any usage of the content of this repository as:
 
-Kuttner S, Knutsen Wickstrøm K, et al. (2019) Machine Learning-Derived Input-Function in Dynamic 18F-FDG PET. J Nucl Med XX:YYYY-ZZZZ.
+Kuttner S, Knutsen Wickstrøm K, Kalda G, Dorraji SE, Martin-Armas M, Oteiza A, et al. Machine learning derived input-function in a dynamic 18F-FDG PET study of mice. Biomed Phys Eng Express. 2019 Dec 20;1–46. Available from: https://doi.org/10.1088/2057-1976/ab6496
